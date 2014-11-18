@@ -1,0 +1,532 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		90A32AF01A19B7020048CCA8 /* MeasurementScheduler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90A32AEF1A19B7020048CCA8 /* MeasurementScheduler.swift */; };
+		90E1BECC1A17E05E00BC951A /* MeasurementsModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90E1BECB1A17E05E00BC951A /* MeasurementsModel.swift */; };
+		90E1BECE1A17E33100BC951A /* MeasurementsDefn.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90E1BECD1A17E33100BC951A /* MeasurementsDefn.swift */; };
+		90E5E5611A17CF99003D2A56 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90E5E5601A17CF99003D2A56 /* AppDelegate.swift */; };
+		90E5E5641A17CF99003D2A56 /* Care24.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 90E5E5621A17CF99003D2A56 /* Care24.xcdatamodeld */; };
+		90E5E5661A17CF99003D2A56 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90E5E5651A17CF99003D2A56 /* ViewController.swift */; };
+		90E5E5691A17CF99003D2A56 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 90E5E5671A17CF99003D2A56 /* Main.storyboard */; };
+		90E5E56B1A17CF99003D2A56 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 90E5E56A1A17CF99003D2A56 /* Images.xcassets */; };
+		90E5E56E1A17CF99003D2A56 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 90E5E56C1A17CF99003D2A56 /* LaunchScreen.xib */; };
+		90E5E57A1A17CF9A003D2A56 /* Care24Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90E5E5791A17CF9A003D2A56 /* Care24Tests.swift */; };
+		90E5E5851A17CFFA003D2A56 /* HealthKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 90E5E5841A17CFFA003D2A56 /* HealthKit.framework */; };
+		90E5E5881A17D530003D2A56 /* HealthMeasurement.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90E5E5871A17D530003D2A56 /* HealthMeasurement.swift */; };
+		90E5E58A1A17D7EA003D2A56 /* HealthStoreUser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90E5E5891A17D7EA003D2A56 /* HealthStoreUser.swift */; };
+		90E5E58D1A17DA19003D2A56 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90E5E58C1A17DA19003D2A56 /* MainViewController.swift */; };
+		90E5E58F1A17DB50003D2A56 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90E5E58E1A17DB50003D2A56 /* HomeViewController.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		90E5E5741A17CF9A003D2A56 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 90E5E5531A17CF99003D2A56 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 90E5E55A1A17CF99003D2A56;
+			remoteInfo = Care24;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		90A32AEF1A19B7020048CCA8 /* MeasurementScheduler.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MeasurementScheduler.swift; sourceTree = "<group>"; };
+		90E1BECB1A17E05E00BC951A /* MeasurementsModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MeasurementsModel.swift; sourceTree = "<group>"; };
+		90E1BECD1A17E33100BC951A /* MeasurementsDefn.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MeasurementsDefn.swift; sourceTree = "<group>"; };
+		90E5E55B1A17CF99003D2A56 /* Care24.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Care24.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		90E5E55F1A17CF99003D2A56 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		90E5E5601A17CF99003D2A56 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		90E5E5631A17CF99003D2A56 /* Care24.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Care24.xcdatamodel; sourceTree = "<group>"; };
+		90E5E5651A17CF99003D2A56 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		90E5E5681A17CF99003D2A56 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		90E5E56A1A17CF99003D2A56 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		90E5E56D1A17CF99003D2A56 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
+		90E5E5731A17CF9A003D2A56 /* Care24Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Care24Tests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		90E5E5781A17CF9A003D2A56 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		90E5E5791A17CF9A003D2A56 /* Care24Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Care24Tests.swift; sourceTree = "<group>"; };
+		90E5E5831A17CFFA003D2A56 /* Care24.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = Care24.entitlements; sourceTree = "<group>"; };
+		90E5E5841A17CFFA003D2A56 /* HealthKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = HealthKit.framework; path = System/Library/Frameworks/HealthKit.framework; sourceTree = SDKROOT; };
+		90E5E5871A17D530003D2A56 /* HealthMeasurement.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HealthMeasurement.swift; sourceTree = "<group>"; };
+		90E5E5891A17D7EA003D2A56 /* HealthStoreUser.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HealthStoreUser.swift; sourceTree = "<group>"; };
+		90E5E58C1A17DA19003D2A56 /* MainViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
+		90E5E58E1A17DB50003D2A56 /* HomeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		90E5E5581A17CF99003D2A56 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				90E5E5851A17CFFA003D2A56 /* HealthKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		90E5E5701A17CF9A003D2A56 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		90A32AEE1A19B66D0048CCA8 /* Care24Scheduler */ = {
+			isa = PBXGroup;
+			children = (
+				90A32AEF1A19B7020048CCA8 /* MeasurementScheduler.swift */,
+			);
+			name = Care24Scheduler;
+			sourceTree = "<group>";
+		};
+		90E1BECA1A17E04200BC951A /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				90E1BECB1A17E05E00BC951A /* MeasurementsModel.swift */,
+				90E1BECD1A17E33100BC951A /* MeasurementsDefn.swift */,
+			);
+			name = Models;
+			sourceTree = "<group>";
+		};
+		90E1BECF1A19211E00BC951A /* HealthStoreClient */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = HealthStoreClient;
+			sourceTree = "<group>";
+		};
+		90E5E5521A17CF99003D2A56 = {
+			isa = PBXGroup;
+			children = (
+				90E5E5841A17CFFA003D2A56 /* HealthKit.framework */,
+				90E5E55D1A17CF99003D2A56 /* Care24 */,
+				90E5E5761A17CF9A003D2A56 /* Care24Tests */,
+				90E5E55C1A17CF99003D2A56 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		90E5E55C1A17CF99003D2A56 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				90E5E55B1A17CF99003D2A56 /* Care24.app */,
+				90E5E5731A17CF9A003D2A56 /* Care24Tests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		90E5E55D1A17CF99003D2A56 /* Care24 */ = {
+			isa = PBXGroup;
+			children = (
+				90A32AEE1A19B66D0048CCA8 /* Care24Scheduler */,
+				90E1BECF1A19211E00BC951A /* HealthStoreClient */,
+				90E1BECA1A17E04200BC951A /* Models */,
+				90E5E58B1A17D82A003D2A56 /* ViewControllers */,
+				90E5E5861A17D373003D2A56 /* Measurements */,
+				90E5E5831A17CFFA003D2A56 /* Care24.entitlements */,
+				90E5E5601A17CF99003D2A56 /* AppDelegate.swift */,
+				90E5E5651A17CF99003D2A56 /* ViewController.swift */,
+				90E5E5671A17CF99003D2A56 /* Main.storyboard */,
+				90E5E56A1A17CF99003D2A56 /* Images.xcassets */,
+				90E5E56C1A17CF99003D2A56 /* LaunchScreen.xib */,
+				90E5E5621A17CF99003D2A56 /* Care24.xcdatamodeld */,
+				90E5E55E1A17CF99003D2A56 /* Supporting Files */,
+				90E5E5891A17D7EA003D2A56 /* HealthStoreUser.swift */,
+			);
+			path = Care24;
+			sourceTree = "<group>";
+		};
+		90E5E55E1A17CF99003D2A56 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				90E5E55F1A17CF99003D2A56 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		90E5E5761A17CF9A003D2A56 /* Care24Tests */ = {
+			isa = PBXGroup;
+			children = (
+				90E5E5791A17CF9A003D2A56 /* Care24Tests.swift */,
+				90E5E5771A17CF9A003D2A56 /* Supporting Files */,
+			);
+			path = Care24Tests;
+			sourceTree = "<group>";
+		};
+		90E5E5771A17CF9A003D2A56 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				90E5E5781A17CF9A003D2A56 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		90E5E5861A17D373003D2A56 /* Measurements */ = {
+			isa = PBXGroup;
+			children = (
+				90E5E5871A17D530003D2A56 /* HealthMeasurement.swift */,
+			);
+			name = Measurements;
+			sourceTree = "<group>";
+		};
+		90E5E58B1A17D82A003D2A56 /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				90E5E58C1A17DA19003D2A56 /* MainViewController.swift */,
+				90E5E58E1A17DB50003D2A56 /* HomeViewController.swift */,
+			);
+			name = ViewControllers;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		90E5E55A1A17CF99003D2A56 /* Care24 */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 90E5E57D1A17CF9A003D2A56 /* Build configuration list for PBXNativeTarget "Care24" */;
+			buildPhases = (
+				90E5E5571A17CF99003D2A56 /* Sources */,
+				90E5E5581A17CF99003D2A56 /* Frameworks */,
+				90E5E5591A17CF99003D2A56 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Care24;
+			productName = Care24;
+			productReference = 90E5E55B1A17CF99003D2A56 /* Care24.app */;
+			productType = "com.apple.product-type.application";
+		};
+		90E5E5721A17CF9A003D2A56 /* Care24Tests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 90E5E5801A17CF9A003D2A56 /* Build configuration list for PBXNativeTarget "Care24Tests" */;
+			buildPhases = (
+				90E5E56F1A17CF9A003D2A56 /* Sources */,
+				90E5E5701A17CF9A003D2A56 /* Frameworks */,
+				90E5E5711A17CF9A003D2A56 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				90E5E5751A17CF9A003D2A56 /* PBXTargetDependency */,
+			);
+			name = Care24Tests;
+			productName = Care24Tests;
+			productReference = 90E5E5731A17CF9A003D2A56 /* Care24Tests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		90E5E5531A17CF99003D2A56 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0610;
+				ORGANIZATIONNAME = GoliaMania;
+				TargetAttributes = {
+					90E5E55A1A17CF99003D2A56 = {
+						CreatedOnToolsVersion = 6.1;
+						DevelopmentTeam = G8LJJF8FB4;
+						SystemCapabilities = {
+							com.apple.BackgroundModes = {
+								enabled = 1;
+							};
+							com.apple.HealthKit = {
+								enabled = 1;
+							};
+						};
+					};
+					90E5E5721A17CF9A003D2A56 = {
+						CreatedOnToolsVersion = 6.1;
+						TestTargetID = 90E5E55A1A17CF99003D2A56;
+					};
+				};
+			};
+			buildConfigurationList = 90E5E5561A17CF99003D2A56 /* Build configuration list for PBXProject "Care24" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 90E5E5521A17CF99003D2A56;
+			productRefGroup = 90E5E55C1A17CF99003D2A56 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				90E5E55A1A17CF99003D2A56 /* Care24 */,
+				90E5E5721A17CF9A003D2A56 /* Care24Tests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		90E5E5591A17CF99003D2A56 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				90E5E5691A17CF99003D2A56 /* Main.storyboard in Resources */,
+				90E5E56E1A17CF99003D2A56 /* LaunchScreen.xib in Resources */,
+				90E5E56B1A17CF99003D2A56 /* Images.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		90E5E5711A17CF9A003D2A56 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		90E5E5571A17CF99003D2A56 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				90A32AF01A19B7020048CCA8 /* MeasurementScheduler.swift in Sources */,
+				90E5E5661A17CF99003D2A56 /* ViewController.swift in Sources */,
+				90E5E58A1A17D7EA003D2A56 /* HealthStoreUser.swift in Sources */,
+				90E5E5641A17CF99003D2A56 /* Care24.xcdatamodeld in Sources */,
+				90E5E58D1A17DA19003D2A56 /* MainViewController.swift in Sources */,
+				90E1BECC1A17E05E00BC951A /* MeasurementsModel.swift in Sources */,
+				90E5E5881A17D530003D2A56 /* HealthMeasurement.swift in Sources */,
+				90E5E58F1A17DB50003D2A56 /* HomeViewController.swift in Sources */,
+				90E1BECE1A17E33100BC951A /* MeasurementsDefn.swift in Sources */,
+				90E5E5611A17CF99003D2A56 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		90E5E56F1A17CF9A003D2A56 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				90E5E57A1A17CF9A003D2A56 /* Care24Tests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		90E5E5751A17CF9A003D2A56 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 90E5E55A1A17CF99003D2A56 /* Care24 */;
+			targetProxy = 90E5E5741A17CF9A003D2A56 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		90E5E5671A17CF99003D2A56 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				90E5E5681A17CF99003D2A56 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		90E5E56C1A17CF99003D2A56 /* LaunchScreen.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				90E5E56D1A17CF99003D2A56 /* Base */,
+			);
+			name = LaunchScreen.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		90E5E57B1A17CF9A003D2A56 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		90E5E57C1A17CF9A003D2A56 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		90E5E57E1A17CF9A003D2A56 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = Care24/Care24.entitlements;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				INFOPLIST_FILE = Care24/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+			};
+			name = Debug;
+		};
+		90E5E57F1A17CF9A003D2A56 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = Care24/Care24.entitlements;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				INFOPLIST_FILE = Care24/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+			};
+			name = Release;
+		};
+		90E5E5811A17CF9A003D2A56 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = Care24Tests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Care24.app/Care24";
+			};
+			name = Debug;
+		};
+		90E5E5821A17CF9A003D2A56 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = Care24Tests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Care24.app/Care24";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		90E5E5561A17CF99003D2A56 /* Build configuration list for PBXProject "Care24" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				90E5E57B1A17CF9A003D2A56 /* Debug */,
+				90E5E57C1A17CF9A003D2A56 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		90E5E57D1A17CF9A003D2A56 /* Build configuration list for PBXNativeTarget "Care24" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				90E5E57E1A17CF9A003D2A56 /* Debug */,
+				90E5E57F1A17CF9A003D2A56 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		90E5E5801A17CF9A003D2A56 /* Build configuration list for PBXNativeTarget "Care24Tests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				90E5E5811A17CF9A003D2A56 /* Debug */,
+				90E5E5821A17CF9A003D2A56 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		90E5E5621A17CF99003D2A56 /* Care24.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				90E5E5631A17CF99003D2A56 /* Care24.xcdatamodel */,
+			);
+			currentVersion = 90E5E5631A17CF99003D2A56 /* Care24.xcdatamodel */;
+			path = Care24.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = 90E5E5531A17CF99003D2A56 /* Project object */;
+}
