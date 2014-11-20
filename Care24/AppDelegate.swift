@@ -20,7 +20,6 @@ class AppDelegate: UIResponder, UIApplicationDelegate , HealthStoreUser {
 
     func application(application: UIApplication, didFinishLaunchingWithOptions launchOptions: [NSObject: AnyObject]?) -> Bool {
         // Override point for customization after application launch.
-        println("App Initialized");
         self.setupHealthStore();
         self.requestAuthorisationForHealthStore();
         return true
@@ -126,7 +125,6 @@ class AppDelegate: UIResponder, UIApplicationDelegate , HealthStoreUser {
             readTypes: NSSet(array: MeasurementsDefn.readingList), completion: {
                 (success, error) in
                 if success {
-                    println("Authorized from app model");
                     self.isHealthStoreAuthorized = true;
                 } else {
                     self.isHealthStoreAuthorized = false;

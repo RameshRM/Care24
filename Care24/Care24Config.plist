@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>Message From</key>
+	<string>caregiver@test.com</string>
+	<key>Message Box Receiver</key>
+	<string>caregiver@test.com</string>
+	<key>Message Box Id</key>
+	<string>http://localhost:3000/messages/send_msg</string>
+</dict>
+</plist>

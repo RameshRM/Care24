@@ -12,6 +12,7 @@ import HealthKit
 public class MeasurementScheduler{
     let measurementsModel:MeasurementsModel = MeasurementsModel();
     let isComplete = false;
+    let messenger:Messenger = Messenger();
     
     class var  instance : MeasurementScheduler{
         
@@ -24,13 +25,14 @@ public class MeasurementScheduler{
     func start() ->Void{
         var measurementSamples:NSDictionary = NSDictionary();
         self.measurementsModel.allMeasurements(MeasurementsDefn.readingList, callback: { (result) -> Void in
-            println(self.measurementsModel.jsonString(result));
+            var toAddress = "caregiver@test.com";
+            var fromAddress = "jane@test.com";
+            self.sendMessage(fromAddress, to: toAddress, message: self.measurementsModel.jsonString(result))
         })
         
     }
-    
-    
-    
-    
-    
+
+    func sendMessage(from:NSString, to: NSString, message: NSString) -> Void{
+        self.messenger.send(from, to: to, body: message);
+    }
 }

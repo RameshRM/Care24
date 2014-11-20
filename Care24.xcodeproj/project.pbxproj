@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		904EBF1A1A1B99A6007293F8 /* Messenger.swift in Sources */ = {isa = PBXBuildFile; fileRef = 904EBF191A1B99A6007293F8 /* Messenger.swift */; };
+		904EBF1D1A1B9A99007293F8 /* Care24Config.plist in Resources */ = {isa = PBXBuildFile; fileRef = 904EBF1C1A1B9A99007293F8 /* Care24Config.plist */; };
 		90A32AF01A19B7020048CCA8 /* MeasurementScheduler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90A32AEF1A19B7020048CCA8 /* MeasurementScheduler.swift */; };
 		90E1BECC1A17E05E00BC951A /* MeasurementsModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90E1BECB1A17E05E00BC951A /* MeasurementsModel.swift */; };
 		90E1BECE1A17E33100BC951A /* MeasurementsDefn.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90E1BECD1A17E33100BC951A /* MeasurementsDefn.swift */; };
@@ -35,6 +37,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		904EBF191A1B99A6007293F8 /* Messenger.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Messenger.swift; sourceTree = "<group>"; };
+		904EBF1C1A1B9A99007293F8 /* Care24Config.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Care24Config.plist; sourceTree = "<group>"; };
 		90A32AEF1A19B7020048CCA8 /* MeasurementScheduler.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MeasurementScheduler.swift; sourceTree = "<group>"; };
 		90E1BECB1A17E05E00BC951A /* MeasurementsModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MeasurementsModel.swift; sourceTree = "<group>"; };
 		90E1BECD1A17E33100BC951A /* MeasurementsDefn.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MeasurementsDefn.swift; sourceTree = "<group>"; };
@@ -76,6 +80,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		904EBF181A1B9962007293F8 /* Care24Messenger */ = {
+			isa = PBXGroup;
+			children = (
+				904EBF191A1B99A6007293F8 /* Messenger.swift */,
+			);
+			name = Care24Messenger;
+			sourceTree = "<group>";
+		};
 		90A32AEE1A19B66D0048CCA8 /* Care24Scheduler */ = {
 			isa = PBXGroup;
 			children = (
@@ -122,6 +134,7 @@
 		90E5E55D1A17CF99003D2A56 /* Care24 */ = {
 			isa = PBXGroup;
 			children = (
+				904EBF181A1B9962007293F8 /* Care24Messenger */,
 				90A32AEE1A19B66D0048CCA8 /* Care24Scheduler */,
 				90E1BECF1A19211E00BC951A /* HealthStoreClient */,
 				90E1BECA1A17E04200BC951A /* Models */,
@@ -144,6 +157,7 @@
 			isa = PBXGroup;
 			children = (
 				90E5E55F1A17CF99003D2A56 /* Info.plist */,
+				904EBF1C1A1B9A99007293F8 /* Care24Config.plist */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -274,6 +288,7 @@
 				90E5E5691A17CF99003D2A56 /* Main.storyboard in Resources */,
 				90E5E56E1A17CF99003D2A56 /* LaunchScreen.xib in Resources */,
 				90E5E56B1A17CF99003D2A56 /* Images.xcassets in Resources */,
+				904EBF1D1A1B9A99007293F8 /* Care24Config.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -297,6 +312,7 @@
 				90E5E5641A17CF99003D2A56 /* Care24.xcdatamodeld in Sources */,
 				90E5E58D1A17DA19003D2A56 /* MainViewController.swift in Sources */,
 				90E1BECC1A17E05E00BC951A /* MeasurementsModel.swift in Sources */,
+				904EBF1A1A1B99A6007293F8 /* Messenger.swift in Sources */,
 				90E5E5881A17D530003D2A56 /* HealthMeasurement.swift in Sources */,
 				90E5E58F1A17DB50003D2A56 /* HomeViewController.swift in Sources */,
 				90E1BECE1A17E33100BC951A /* MeasurementsDefn.swift in Sources */,
