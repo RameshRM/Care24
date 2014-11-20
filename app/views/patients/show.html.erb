@@ -1,0 +1,47 @@
+<style>
+	.patient_header_container{
+		border: 1px solid #999;
+		background: #eee;
+		padding: 20px;
+	}
+	
+	.patient_header_name {
+		font-size: 2em;
+	}
+	.measures_item {
+		border: 1px solid #bbb;
+		padding: 10px;
+		width: 400px;
+	}
+	.measure_name {
+		font-size: 1.2em;
+	}
+	.measure_date {
+		font-size: .8em;
+		color: #89c;
+	}
+</style>
+<script>
+var intervalID = setInterval(function() { check_msg() }, 10000);
+
+</script>
+
+<div class="patient_header_container">
+  <span class="patient_header_name"><%= @patient.first_name %> <%= @patient.last_name %></span>
+	<span id="patient_email" data-patient-email="<%= @patient.email%>"></span>
+</div>
+
+<div class="patient_body">
+	<div class="measures_list_container">
+    <% @patient.measures.order("created_at DESC").each do |measure| %>
+  	<div class="measures_item" data-id="<%= measure.id %>">
+      <span class="measure_name"><%= measure.name %></span>
+			</br>
+      <span class="measure_date"><%= measure.created_at %></span>
+		</div>
+    <% end %>
+  </div>
+</div>
+
+
+

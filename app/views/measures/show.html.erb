@@ -1,0 +1,27 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Patient:</strong>
+  <%= @measure.patient_id %>
+</p>
+
+<p>
+  <strong>Type:</strong>
+  <%= @measure.measure_type %>
+</p>
+
+<p>
+  <strong>Name:</strong>
+  <%= @measure.name %>
+</p>
+
+<p>
+  <strong>Data:</strong>
+  <%= @measure.data %>
+</p>
+
+
+
+
+<%= link_to 'Edit', edit_patient_measure_path(@patient, @measure) %> |
+<%= link_to 'Back', patient_measures_path(@patient) %>
